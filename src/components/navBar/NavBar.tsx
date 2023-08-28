@@ -6,7 +6,6 @@ import IconCart from '../../assets/images/cesta.png'
 import { toastAlerta } from '../../utils/toastAlerta'
 
 
-
 function Navbar() {
 
   let navigate = useNavigate()
@@ -33,6 +32,7 @@ function Navbar() {
 
         <div className='w-screen bg-green-900 flex justify-center text-md'>
           <div className='flex gap-7 py-3 text-white font-roboto'>
+            
             <Link to='/home' className='hover:text-orange-950 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-600'>Inicio</Link>
             <Link to='/perfil' className='hover:text-orange-950 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-600'>Perfil</Link>
             <Link to='/produtos' className='hover:text-orange-950 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-600'>Produtos</Link>
@@ -62,13 +62,13 @@ function Navbar() {
           </div>
         </div>
 
-        <div className='w-screen bg-green-900 flex justify-center text-md'>
+        <div className='w-screen bg-gradient-to-r from-green-900 via-green-700 to-green-900 flex justify-center text-md'>
           <div className='flex gap-7 py-3 text-white font-roboto mr-16'>
           <Link to='/cadastro' className='rounded link-animated border-animate hover:text-orange-400 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-600 mr-16'>
         CADASTRE-SE JÁ !
           </Link>
             <Link to='/login' className='hover:text-orange-400 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-600 pt-1 mr-6'>Faça seu Login</Link>
-            <Link to='/sobre' className='hover:text-orange-400 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-600 pt-1 mr-20'>Sobre Nós</Link>
+            <Link to='/sobre' className='hover:text-orange-400 hover:rounded transition duration-300 transition-transform transform hover:scale-105 focus:outline-none focus:text-orange-400 pt-1 mr-20'>Sobre Nós</Link>
           </div>
           </div>
 
